@@ -1,12 +1,12 @@
-# SQL portfolio
-Manual tester portfolio
+## My SQL portfolio
+Manual tester portfolio by Hanna Kulikowska
 
-### Use a SELECT statement to grab the first and last names of every customer and their email address
-
+1. Use a SELECT statement to grab the first and last names of every customer and their email address
+```sql
 SELECT first_name, last_name, email FROM customer;
-
-### How many UNIQUE release years do we have inside the film table?
-
+```
+2. How many UNIQUE release years do we have inside the film table?
+```
 SELECT DISTINCT (release_year) FROM film;
-
-### How many unique rental rates do we have?
+```
+3. How many unique rental rates do we have?
