@@ -1,5 +1,4 @@
 # Part 1: SQL queries / PostgreSQL & pgAdmin
-**Description:** _I'm using several interconnected databases here, the schema of which you can you see below. There are tasks and my queries for the databases. You can also see screenshots with queries and data output. The databases and the questions were created by Jose Portilla._
 
 `SELECT` `DISTINCT` `COUNT` 
 <br> 
