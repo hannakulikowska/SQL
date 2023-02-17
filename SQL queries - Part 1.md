@@ -389,7 +389,7 @@ WHERE first_name LIKE 'P%'
 </details>
 <br>
 
-**23. How many unique districts are our customers from? Retrieve the list of names for those distincts?**
+**23. How many unique districts are our customers from? Retrieve the list of names for those distincts.**
 
 ```sql
 SELECT COUNT (DISTINCT district) FROM address;
