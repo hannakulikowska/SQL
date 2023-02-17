@@ -32,15 +32,7 @@ ON address.address_id = customer.address_id
 WHERE district = 'California';
 ```
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219332606-97ffcfd5-3502-4f18-87ab-9d9a9ebbdccf.png">
-    </picture>
-  </p>
-</details>
-<br>
-
+<img src="https://user-images.githubusercontent.com/80547490/219332606-97ffcfd5-3502-4f18-87ab-9d9a9ebbdccf.png">
 
 **2. A customer walks in and is a huge fan of the actor "Nick Wahlberg" and wants to know which movies heis in. Get a list of all the movies "Nick Wahlberg" has been in.**
 
@@ -54,14 +46,7 @@ INNER JOIN film ON film_actor.film_id = film.film_id
 WHERE first_name = 'Nick' AND last_name = 'Wahlberg';
 ```
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219339252-ccefbe87-6dd3-43a1-ab15-17b2a5d4dfcc.png">
-    </picture>
-  </p>
-</details>
-<br>
+<img src="https://user-images.githubusercontent.com/80547490/219339252-ccefbe87-6dd3-43a1-ab15-17b2a5d4dfcc.png">
 
 **3. Some new privacy rules have been implemented and we want to make sure that we don't have any payment information that's not attached to customer or that we don't have some customer information that isn't attached to any payments. Essentially, we want to make sure that all the payments we have is associated with a current customer and all the customers we have are associated with some historical payment.**
 
@@ -79,15 +64,8 @@ OR payment.payment_id IS null;
 
 > _I got back empty results, which means the company is in compliance with the new privacy policy._
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219354386-fb2595e1-c50d-4052-8596-90e14a11b8ad.png">
-    </picture>
-  </p>
-</details>
-<br>
-
+<img src="https://user-images.githubusercontent.com/80547490/219354386-fb2595e1-c50d-4052-8596-90e14a11b8ad.png">
+    
 **There ir another way to solve the previous task:**
 
 `LEFT OUTER JOIN` `WHERE` `IS NULL` <br>
@@ -101,15 +79,8 @@ ON customer.customer_id = payment.customer_id
 WHERE payment.payment_id IS null;
 ```
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219380779-d55438b4-0334-4e40-83eb-09dfac23b6a9.png">
-    </picture>
-  </p>
-</details>
-<br>
-
+<img src="https://user-images.githubusercontent.com/80547490/219380779-d55438b4-0334-4e40-83eb-09dfac23b6a9.png">
+    
 **4. Select films that are either in just the film table or in both film and inventory tables. Get film_id, title, inventory_id and store_id.**
 
 `LEFT OUTER JOIN` <br>
@@ -121,14 +92,7 @@ SELECT film.film_id, title, inventory_id, store_id FROM film
 LEFT JOIN inventory ON film.film_id = inventory.film_id;
 ```
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219425645-8af90f07-4e01-4968-8cf9-3f0625457763.png">
-    </picture>
-  </p>
-</details>
-<br>
+<img src="https://user-images.githubusercontent.com/80547490/219425645-8af90f07-4e01-4968-8cf9-3f0625457763.png">
 
 **Among the results, find the films that are not in the inventory table.**
 
@@ -142,11 +106,4 @@ LEFT JOIN inventory ON film.film_id = inventory.film_id
 WHERE inventory.film_id IS null;
 ```
 
-<details><summary>Screenshot</summary>
-  <p>
-    <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219429400-ad898d54-b6be-45f4-b87f-c19003e375fe.png">
-    </picture>
-  </p>
-</details>
-<br>
+<img alt="screen" src="https://user-images.githubusercontent.com/80547490/219429400-ad898d54-b6be-45f4-b87f-c19003e375fe.png">
