@@ -12,10 +12,11 @@
 <br>
 <br>
 
-
 <details><summary>DATABASE SCHEMA</summary>
   <p>
     <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/80547490/218577205-91207916-34c1-4f24-91c5-d83b6f9be67a.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/80547490/218577205-91207916-34c1-4f24-91c5-d83b6f9be67a.png">
       <img alt="Database schema" src="https://user-images.githubusercontent.com/80547490/218577205-91207916-34c1-4f24-91c5-d83b6f9be67a.png">
     </picture>
   </p>
@@ -28,6 +29,17 @@
 ```sql
 SELECT first_name, last_name, email FROM customer;
 ```
+
+<details><summary>Screenshot</summary>
+  <p>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="">
+      <source media="(prefers-color-scheme: light)" srcset="">
+      <img alt="Screenshot" src="">
+    </picture>
+  </p>
+</details>
+<br>
 
 <details><summary>Screenshot</summary>
   <p>
@@ -47,7 +59,9 @@ SELECT DISTINCT release_year FROM film;
 <details><summary>Screenshot</summary>
   <p>
     <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219110869-8a5eff82-6732-4e4a-83c4-78b2310269ec.png">
+      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/80547490/219110869-8a5eff82-6732-4e4a-83c4-78b2310269ec.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/80547490/219110869-8a5eff82-6732-4e4a-83c4-78b2310269ec.png">
+      <img alt="Screenshot" src="https://user-images.githubusercontent.com/80547490/219110869-8a5eff82-6732-4e4a-83c4-78b2310269ec.png">
     </picture>
   </p>
 </details>
@@ -62,7 +76,9 @@ SELECT COUNT (DISTINCT rental_rate) FROM film;
 <details><summary>Screenshot</summary>
   <p>
     <picture>
-      <img alt="screen" src="https://user-images.githubusercontent.com/80547490/219115977-f81fd9ca-3f4c-45ab-bc66-19c1cfaf3af3.png">
+      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/80547490/219115977-f81fd9ca-3f4c-45ab-bc66-19c1cfaf3af3.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/80547490/219115977-f81fd9ca-3f4c-45ab-bc66-19c1cfaf3af3.png">
+      <img alt="Screenshot" src="https://user-images.githubusercontent.com/80547490/219115977-f81fd9ca-3f4c-45ab-bc66-19c1cfaf3af3.png">
     </picture>
   </p>
 </details>
