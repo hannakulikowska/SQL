@@ -52,7 +52,7 @@ Result: I got the list of all my boards. "API Board" ID is 63e66c84d9e22ffc54d7c
 - token
 
 Status: 200 OK <br>
-Result: _A "In Progress" list was created with ID 63e6b255a9038a48f879f22c._ <br><br>
+Result: A "In Progress" list was created with ID 63e6b255a9038a48f879f22c. <br><br>
   
 **GET LISTS ON A BOARD**
 `GET` 
@@ -80,7 +80,7 @@ Result: I got the lists on the API Board - "To Do", "In Progress", "Doing" and "
 - token
 
 Status: 200 OK <br>
-Result: _A new card was created with ID 63e75259e839c8cee7a01029. <br><br>
+Result: A new card was created with ID 63e75259e839c8cee7a01029. <br><br>
 
 **GET CARDS ON A BOARD**
 `GET`
