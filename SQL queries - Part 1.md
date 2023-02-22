@@ -165,7 +165,7 @@ WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15';
 > **Note!** This query is not include 2007-02-15. 
 <br>
 
-<img src="https://user-images.githubusercontent.com/80547490/219116787-2b104604-3c43-43f1-853f-fecaf1ea86aa.png" width=80% hight=80%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116787-2b104604-3c43-43f1-853f-fecaf1ea86aa.png" width=60% hight=60%><br>
 
 ## 18. How many payments were not $0.99, $1.98 or $1.99?
 
@@ -217,7 +217,7 @@ SELECT COUNT(*) FROM actor
 WHERE first_name LIKE 'P%'
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118184-48c1b5bc-bbc4-400c-9320-d0be26b8f92e.png" width=30% hight=30%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118184-48c1b5bc-bbc4-400c-9320-d0be26b8f92e.png" width=25% hight=25%><br>
 
 ## 23. How many unique districts are our customers from? Retrieve the list of names for those distincts.
 
@@ -267,7 +267,7 @@ GROUP BY customer_id, staff_id
 ORDER BY customer_id, staff_id;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118510-a83f3e1d-0a1e-42f5-8c80-e9ccc7941f1c.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118510-a83f3e1d-0a1e-42f5-8c80-e9ccc7941f1c.png" width=40% hight=40%><br>
 
 ## 28. What is the daily income for the entire period of work?
 
@@ -349,7 +349,7 @@ GROUP BY customer_id
 HAVING SUM(amount) > 100;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219119045-f66ca857-03b6-4069-bcc6-7c8104f8f76d.png" width=40% hight=40%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219119045-f66ca857-03b6-4069-bcc6-7c8104f8f76d.png" width=35% hight=35%><br>
 
 ## 36. Return the customer ids of customers who have spent at least $110 with the staff member who has an ID of 2.
 
