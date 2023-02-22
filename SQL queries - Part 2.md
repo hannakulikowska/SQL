@@ -14,13 +14,7 @@
 <br>
 
 
-<details><summary>Click here to see the DATABASE SCHEMA</summary>
-  <p>
-    <picture>
-      <img alt="Database schema" src="https://user-images.githubusercontent.com/80547490/218577205-91207916-34c1-4f24-91c5-d83b6f9be67a.png">
-    </picture>
-  </p>
-</details>
+<img alt="Database schema" src="https://user-images.githubusercontent.com/80547490/218577205-91207916-34c1-4f24-91c5-d83b6f9be67a.png" width=60% hight=60%>
 <br>
 <br>
 
