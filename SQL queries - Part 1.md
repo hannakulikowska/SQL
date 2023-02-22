@@ -107,7 +107,7 @@ SELECT phone FROM address
 WHERE address = '259 Ipoh Drive';
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116486-7e4b592d-1535-47db-ad3a-1023f1bcc788.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116486-7e4b592d-1535-47db-ad3a-1023f1bcc788.png" width=30% hight=30%><br>
 
 ## 12. Find customers' names who visited our stores. Order them by store ID on descending and first name on ascending.
 
@@ -116,7 +116,7 @@ SELECT first_name, last_name FROM customer
 ORDER BY store_id DESC, first_name ASC;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116552-986f6e9f-f8d5-4692-abd1-8a052db75895.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116552-986f6e9f-f8d5-4692-abd1-8a052db75895.png" width=30% hight=30%><br>
 
 ## 13. We want to reward our first 10 paying customers. What are the customer ids of the first 10 customers who created a payment?
 
@@ -126,7 +126,7 @@ ORDER BY payment_date ASC
 LIMIT 10;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116608-ee93c3a0-6baf-4dd9-9b7d-36f32cf0bda9.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116608-ee93c3a0-6baf-4dd9-9b7d-36f32cf0bda9.png" width=30% hight=30%><br>
 
 ## 14. A customer wants to quickly rent a video to watch over their short lunch break. What are the titles of the 5 shortest (in length of runtime) movies?
 
@@ -136,7 +136,7 @@ ORDER BY length ASC
 LIMIT 5;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116644-8c2a8ae7-adb9-4071-b05f-762a1e027f56.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116644-8c2a8ae7-adb9-4071-b05f-762a1e027f56.png" width=30% hight=30%><br>
 
 ## 15. If the customer can watch any movie that is 50 minutes or less in run time, how many options does this customer have?
 
@@ -145,7 +145,7 @@ SELECT COUNT(*) FROM film
 WHERE length <= 50;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116688-67529acd-39aa-45d1-8c73-aa753d413bba.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116688-67529acd-39aa-45d1-8c73-aa753d413bba.png" width=30% hight=30%><br>
 
 ## 16. We want to know the actual number of payments that were done not between $8 and $9.
 
@@ -154,7 +154,7 @@ SELECT COUNT(*) FROM payment
 WHERE amount NOT BETWEEN 8 AND 9;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116744-259a130f-34fe-482b-9bbb-6a17c17f57cd.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116744-259a130f-34fe-482b-9bbb-6a17c17f57cd.png" width=30% hight=30%><br>
 
 ## 17. What the payments that happened on the first half of February of 2007?
 
@@ -165,7 +165,7 @@ WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15';
 > **Note!** This query is not include 2007-02-15. 
 <br>
 
-<img src="https://user-images.githubusercontent.com/80547490/219116787-2b104604-3c43-43f1-853f-fecaf1ea86aa.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116787-2b104604-3c43-43f1-853f-fecaf1ea86aa.png" width=80% hight=80%><br>
 
 ## 18. How many payments were not $0.99, $1.98 or $1.99?
 
@@ -174,7 +174,7 @@ SELECT COUNT(*) FROM payment
 WHERE amount NOT IN (0.99, 1.98, 1.99);
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116842-89aad5df-d635-4b7b-867f-32b73d38ddeb.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116842-89aad5df-d635-4b7b-867f-32b73d38ddeb.png" width=30% hight=30%><br>
 
 ## 19. Select all the columns from customer table, where the first name are John, Jake or Julie.
 
@@ -183,7 +183,7 @@ SELECT * FROM customer
 WHERE first_name IN ('John', 'Jake', 'Julie');
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116917-e44395c4-911d-484c-b7c0-1ea41ae2179a.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219116917-e44395c4-911d-484c-b7c0-1ea41ae2179a.png" width=90% hight=90%><br>
 
 ## 20. How many customers actually have a 5 letters name that starts with 'j' and last name that starts with 's'?
 
@@ -192,14 +192,14 @@ SELECT COUNT(*) FROM customer
 WHERE first_name ILIKE 'j____' AND last_name ILIKE 's%';
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219116995-adcab451-715b-4546-a1db-2c306e9ad592.png" width=50% hight=50%>
+<img src="https://user-images.githubusercontent.com/80547490/219116995-adcab451-715b-4546-a1db-2c306e9ad592.png" width=40% hight=40%>
 
 ```sql
 SELECT * FROM customer
 WHERE first_name ILIKE 'j____' AND last_name ILIKE 's%';
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118078-7080d581-40fd-4117-b7fd-a49fe48972e7.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118078-7080d581-40fd-4117-b7fd-a49fe48972e7.png" width=90% hight=90%><br>
 
 ## 21. How many payment transactions were greater than $5.00?
 
@@ -208,7 +208,7 @@ SELECT COUNT(*) FROM payment
 WHERE amount > 5;
 ```
 
-<img alt="screen" src="https://user-images.githubusercontent.com/80547490/219118134-a4973616-90d0-404b-a2f3-73f99561af24.png" width=50% hight=50%><br>
+<img alt="screen" src="https://user-images.githubusercontent.com/80547490/219118134-a4973616-90d0-404b-a2f3-73f99561af24.png" width=30% hight=30%><br>
 
 ## 22. How many actors have a first name that starts with the letter P?
 
@@ -217,7 +217,7 @@ SELECT COUNT(*) FROM actor
 WHERE first_name LIKE 'P%'
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118184-48c1b5bc-bbc4-400c-9320-d0be26b8f92e.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118184-48c1b5bc-bbc4-400c-9320-d0be26b8f92e.png" width=30% hight=30%><br>
 
 ## 23. How many unique districts are our customers from? Retrieve the list of names for those distincts.
 
@@ -225,13 +225,13 @@ WHERE first_name LIKE 'P%'
 SELECT COUNT (DISTINCT district) FROM address;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118229-905d776d-e679-4010-ae17-fc23e884bcf9.png" width=50% hight=50%>
+<img src="https://user-images.githubusercontent.com/80547490/219118229-905d776d-e679-4010-ae17-fc23e884bcf9.png" width=30% hight=30%>
 
 ```sql
 SELECT DISTINCT district FROM address;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118308-12116632-261b-40d3-aac0-f5de4dea4892.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118308-12116632-261b-40d3-aac0-f5de4dea4892.png" width=30% hight=30%><br>
 
 ## 24. How many films have a rating of R and a replacement cost between $5 and $15?
 
@@ -240,7 +240,7 @@ SELECT COUNT(*) FROM film
 WHERE rating = 'R' AND replacement_cost BETWEEN 5 AND 15;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118370-e8f48d29-b834-4f8d-830f-d414a5a6dbd1.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118370-e8f48d29-b834-4f8d-830f-d414a5a6dbd1.png" width=40% hight=40%><br>
 
 ## 25. How many films have the word Truman somewhere in the title?
 
@@ -249,7 +249,7 @@ SELECT COUNT(*) FROM film
 WHERE title ILIKE '%truman%';
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118422-8a5af971-9199-4220-87ae-5cdf745997bb.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118422-8a5af971-9199-4220-87ae-5cdf745997bb.png" width=30% hight=30%><br>
 
 ## 26. What the minimum, maximum and average replacement cost was? How much it would cost us to replace all movies?
 
@@ -257,7 +257,7 @@ WHERE title ILIKE '%truman%';
 SELECT MIN(replacement_cost), MAX(replacement_cost), ROUND(AVG(replacement_cost),2), SUM(replacement_cost) FROM film;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118474-b0798f52-02b4-48c9-aa00-920e600f8415.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118474-b0798f52-02b4-48c9-aa00-920e600f8415.png" width=30% hight=30%><br>
 
 ## 27. What is the total sum that the every customer spends? Group by customers and by staff members, order by customers and staff.
 
@@ -277,7 +277,7 @@ GROUP BY DATE(payment_date)
 ORDER BY DATE(payment_date);
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118559-1176a037-4944-41a0-8ac1-516bfd5569be.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118559-1176a037-4944-41a0-8ac1-516bfd5569be.png" width=30% hight=30%><br>
 
 ## 29. We have two staff members, which staff ids 1 and 2. We want to give a bonus to the staff member that handled the most payments. How many payments did each staff member handle and who gets the bonus?
 
@@ -286,7 +286,7 @@ SELECT staff_id, COUNT(amount) FROM payment
 GROUP BY staff_id;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118620-9708b868-646c-48d1-9e9e-b98db1ef4758.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118620-9708b868-646c-48d1-9e9e-b98db1ef4758.png" width=40% hight=40%><br>
 
 ## 30. Corporate HQ is conducting a study on the relationship between replacement cost and a movie MPAA rating (e.g. G, PG, R, etc.). What is the average replacement cost per MPAA rating?
 
@@ -295,7 +295,7 @@ SELECT rating, ROUND(AVG(replacement_cost),2) FROM film
 GROUP BY rating;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118712-9bb7e5c7-baee-4819-baba-44b041499f75.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118712-9bb7e5c7-baee-4819-baba-44b041499f75.png" width=40% hight=40%><br>
 
 ## 31. We are running a promotion to reward our top 5 customers with coupons. What are the customer ids of the top 5 customers by total spend?
 
@@ -306,7 +306,7 @@ ORDER BY SUM(amount) DESC
 LIMIT 5;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118774-287fb2d4-1de7-4d2c-aee4-403a924f25fd.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118774-287fb2d4-1de7-4d2c-aee4-403a924f25fd.png" width=40% hight=40%><br>
 
 ## 32. Select customers who spent more than $100.
 
@@ -318,7 +318,7 @@ HAVING SUM(amount) > 100;
 
 > _HAVING clause allows us to filter after an aggregation has already taken place._
 
-<img src="https://user-images.githubusercontent.com/80547490/219118844-985fdd04-9049-4397-9245-d9cd649d8d6d.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118844-985fdd04-9049-4397-9245-d9cd649d8d6d.png" width=35% hight=35%><br>
 
 ## 33. Select only stores that had more than 300 customers.
 
@@ -328,7 +328,7 @@ GROUP BY store_id
 HAVING COUNT(customer_id) > 300;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118927-de0e8764-abf8-4732-b9a8-006997b483a9.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118927-de0e8764-abf8-4732-b9a8-006997b483a9.png" width=40% hight=40%><br>
 
 ## 34. We are launching a platinum service for our most loyal customers. We will assign platinum status to customers that have had 40 or more transaction payments. What customer ids are eligible for platinum status?
 
@@ -338,7 +338,7 @@ GROUP BY customer_id
 HAVING COUNT(*) >= 40;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219118987-3479d620-8d55-4cae-8936-85adc018e7f5.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219118987-3479d620-8d55-4cae-8936-85adc018e7f5.png" width=30% hight=30%><br>
 
 ## 35. What are the customer ids of customers who have spent more than $100 in payment transactions with our staff_id member 2?
 
@@ -349,7 +349,7 @@ GROUP BY customer_id
 HAVING SUM(amount) > 100;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219119045-f66ca857-03b6-4069-bcc6-7c8104f8f76d.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219119045-f66ca857-03b6-4069-bcc6-7c8104f8f76d.png" width=40% hight=40%><br>
 
 ## 36. Return the customer ids of customers who have spent at least $110 with the staff member who has an ID of 2.
 
@@ -360,7 +360,7 @@ GROUP BY customer_id
 HAVING SUM(amount) >= 110;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219119103-9218ae0f-53f8-4094-9219-0b783f7cbccf.png" width=50% hight=50%><br>
+<img src="https://user-images.githubusercontent.com/80547490/219119103-9218ae0f-53f8-4094-9219-0b783f7cbccf.png" width=40% hight=40%><br>
 
 ## 37. What customer has the highest customer ID number whose name starts with an 'E' and has an adress ID lower than 500?
 
@@ -371,4 +371,4 @@ ORDER BY customer_id DESC
 LIMIT 1;
 ```
 
-<img src="https://user-images.githubusercontent.com/80547490/219119167-d5901548-cebe-4486-8b1a-c71cfaa60d6f.png" width=50% hight=50%>
+<img src="https://user-images.githubusercontent.com/80547490/219119167-d5901548-cebe-4486-8b1a-c71cfaa60d6f.png" width=40% hight=40%>
